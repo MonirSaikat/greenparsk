@@ -11,7 +11,7 @@ class Settings extends Model
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;
     protected $insertID = 0;
-    protected $returnType = 'array';
+    protected $returnType = 'object';
     protected $useSoftDeletes = false;
     protected $protectFields = true;
     protected $allowedFields = ['site_title', 'site_subtitle', 'site_developer', 'site_about_us', 'site_phone_no', 'site_email', 'site_address'];

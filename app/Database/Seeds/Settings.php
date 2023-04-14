@@ -19,6 +19,8 @@ class Settings extends Seeder
             'site_phone_no' => '01309956223',
             'site_email' => 'monirsaikat1@gmail.com',
             'site_address' => 'Rangpur, Bangladesh',
+            'site_logo' => 'logo.gif',
+            'site_banner' => 'banner.jpg'
         ];
 
         $projects_data = [

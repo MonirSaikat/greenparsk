@@ -49,6 +49,16 @@ class Settings extends Migration
                 'constraint' => 255,
                 'null' => true,
             ],
+            'site_logo' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+                'null' => true,
+            ],
+            'site_banner' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+                'null' => true,
+            ],
         ]);
 
         $this->forge->addKey('id', true);
