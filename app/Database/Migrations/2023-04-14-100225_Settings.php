@@ -49,6 +49,15 @@ class Settings extends Migration
                 'constraint' => 255,
                 'null' => true,
             ],
+            'created_at' => [
+                'type' => 'TIMESTAMP',
+                'default' => 'CURRENT_TIMESTAMP',
+            ],
+            'updated_at' => [
+                'type' => 'TIMESTAMP',
+                'default' => 'CURRENT_TIMESTAMP',
+                'on update' => 'CURRENT_TIMESTAMP',
+            ],
         ]);
 
         $this->forge->addKey('id', true);
