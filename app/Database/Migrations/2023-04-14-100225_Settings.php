@@ -54,6 +54,11 @@ class Settings extends Migration
                 'constraint' => 255,
                 'null' => true,
             ],
+            'site_favicon' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+                'null' => true,
+            ],
             'site_banner' => [
                 'type' => 'VARCHAR',
                 'constraint' => 255,

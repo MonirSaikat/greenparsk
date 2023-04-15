@@ -8,7 +8,9 @@ class Projects extends BaseController
 {
     public function index()
     {
-        return view('projects/index');
+        $projects = model('Project')->findAll();
+
+        return view('projects/index', compact('projects'));
     }
 
     public function view($id)

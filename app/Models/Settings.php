@@ -14,7 +14,7 @@ class Settings extends Model
     protected $returnType = 'object';
     protected $useSoftDeletes = false;
     protected $protectFields = true;
-    protected $allowedFields = ['site_title', 'site_subtitle', 'site_developer', 'site_about_us', 'site_phone_no', 'site_email', 'site_address'];
+    protected $allowedFields = ['site_title', 'site_subtitle', 'site_developer', 'site_about_us', 'site_phone_no', 'site_logo', 'site_banner', 'site_favicon','site_email', 'site_address'];
 
     // Dates
     protected $useTimestamps = false;

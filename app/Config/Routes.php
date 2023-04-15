@@ -13,6 +13,8 @@ $routes->set404Override();
 
 $routes->get('/', 'Home::index');
 $routes->get('/about-us', 'Pages::about_us');
+$routes->get('/login', 'Pages::login');
+$routes->get('/gallery', 'Pages::gallery');
 $routes->get('/projects', 'Projects::index');
 $routes->get('/projects/(:any)', 'Projects::view/$1');
 

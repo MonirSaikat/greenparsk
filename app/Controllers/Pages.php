@@ -12,4 +12,14 @@ class Pages extends BaseController
 
         return view('pages/about_us', compact('about_us'));
     }
+
+    public function gallery()
+    {
+        return view('pages/gallery');
+    }
+
+    public function login()
+    {
+        return view('pages/login');
+    }
 }

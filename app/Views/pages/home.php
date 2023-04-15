@@ -2,10 +2,10 @@
 
 <?=$this->section('content')?>
 
-<div class="columns">
+<div class="columns columns-3">
 <div id="leftPan">
     <div id="welcome">
-        <h2></h2>
+        <h2>Welcome</h2>
         <img src="images/img_welcome.jpg" width="225" height="68" alt="" />
         <p class="headline">Nam eu nulla. Donec lobortis purus vel urna. Nunc laoreet lacinia nunc. </p>
         <p>Nam eu nulla. Donec lobortis purus vel urna. Nunc laoreet lacinia nunc. In volutpat sodales ipsum. Sed
@@ -17,7 +17,7 @@
 
 <div id="middlePan">
     <div id="services">
-        <h2></h2>
+        <h2>Services</h2>
         <ul>
             <?php foreach ($services as $service): ?>
             <li><a href="#"><?=$service->title?> </a></li>
@@ -28,8 +28,8 @@
 
 <div id="rightPan">
     <div id="featproject">
-        <h2></h2>
-        <img src="images/img_project.jpg" width="225" height="68" alt="" />
+        <h2>Featured Project</h2>
+        <img src="<?=base_url('images/' . $featured_project->image)?>" width="225" height="68" alt="" />
         <p class="headline"><?=$featured_project->title?></p>
         <p>
             <?=word_limiter($featured_project->details, 48, '')?>
